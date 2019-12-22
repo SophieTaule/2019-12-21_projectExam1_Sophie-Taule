@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="SpaceX" content="Spacex, Contact page">
+	<meta name="keywords" content="Contact, call email">
+	<meta name="author" content="Sophie Taule">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/rvb2smc.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/logoicon.png">
+	<link href="style.css" rel="stylesheet">
+	<title>SpaceX - Contact us</title>
+</head>
+<body>
+
+
+
+  <!----MENU---->
+  <!----Phone bars button---->
+
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30 ">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+  
+
+
+  <!-- Navigation-->
+    <nav class="navbar-menu">
+              <a href="index.html"><img src="images/spacexlogo.png" alt="Logo" height="40" width="auto"></a> 
+
+              <a href="history.html">HISTORY</a>
+              <a href="launch.html">LAUNCH</a> 
+              <a href="about.html">ABOUT US</a>
+              <a href="contact.html">CONTACT US</a>   
+    </nav>
+  
+  <!-- Navigation - logo only -->
+     <nav class="navbar-logo">
+          <a href="index.html"><img src="images/spacexlogo.png" alt="Logo" height="40" width="auto"></a> 
+     </nav>
+  
+  
+  <!-- Phone/ sidemenu-->
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="index.html"><img src="images/spacexlogo.png" alt="Logo" height="40" width="suto"></a> 
+    <br>
+    <a href="history.html">History</a>
+    <a href="launch.html">Launch</a>
+    <a href="about.html">About us</a>
+    <a href="contact.html">Contact us</a>
+    	
+    	
+  </div>
+  </nav>
+
+
+
+
+		<div class="wrapper">
+			
+						   
+	
+					   <!-- Top Container -->
+					<section class="top-container-contact">
+						 <div class="showcase-contact">
+                <h1>CONTACT US</h1>
+                </div>
+							
+								  
+
+					   
+						 
+					 </section>
+                   
+                     <!--Contact form v1 -- -->
+                  <section class="contact-container">
+                       
+
+                              <div class="contact-box a">
+                                <h3>Help us improve</h3>
+                                <p>If you have ideas to how we can improve our site, let us know!</p>
+                                <img src="images/contact.jpg" alt="contact">
+                                <span class="contact-nr"></span>
+                                <p>(Techincians completing final work on a Falcon 9 transfer tube 2016)</p>
+                              </div>
+
+
+
+
+                        <div class="form">
+                                <div class="contact-form">
+                                    <h1>Send us a message</h1>
+                             
+                            
+                                    <form onsubmit="validate();">
+                                <div class="contact-form">
+                                    <label for="fname">First Name</label>
+                                    <br>
+                                    <input type="text" id="firstName" name="firstName" placeholder="John...">
+                                    <span class="error" id="firstNameError">This field cannot be blank</span>
+                                </div>
+                                <br>
+
+                                <div class="contact-form">
+                                    <label for="lname">Last Name</label>
+                                    <br>                            
+                                    <input type="text" id="lastName" name="lastname" placeholder="Doe...">
+                                    <span class="error" id="lastNameError">This field cannot be blank</span>
+                                </div>
+
+                                <br>
+                                <div class="contact-form">
+                                    <label for="phone">Phone number</label> 
+                                    <br> 
+                                    <input type="text" id="phone" name="phone" placeholder="000 000 0000">
+                                    <span class="error" id="phoneError">Please enter a correct phone number</span>
+                                </div>
+                                <br>
+                                <div class="contact-form">
+                                    <label for="email">Email</label> 
+                                    <br> 
+                                    <input type="text" id="email" name="email" placeholder="JohnDoe@example.com">               
+                                    <span class="error" id="emailError">Please enter a correct email address</span>
+                                </div>
+                                <br>
+
+
+                                <div class="contact-form">
+                                    <label for="message">Message</label> 
+                                    <br>                         
+                                    <textarea placeholder="Write your message here..." style="height:200px"></textarea>
+                                    <!--<span class="error" id="emailError">Please enter a correct email address</span>-->
+                                </div>
+
+
+                                <div class="contact-form">
+                                    <input type="submit" id="submitContact" class="send"></i></button>
+                         
+                              </div>
+                            </form>
+                            </div>
+                        </div>
+
+                        <div class="contact-box b">
+                          <h3>Call us</h3>
+                          <p>You can also contact us by calling</p>
+                          <span class="contact-nr">222 333 4444</span>
+                        </div> 
+                </section>
+
+
+
+	
+           <!-- Boxes Section -->
+          <section class="boxes">
+               <div class="clear-box">
+				  <h3></h3>
+				  
+				  <span class="contact-nr"></span>
+                </div>
+            </section>
+            
+		</div>
+			
+	
+
+
+
+
+
+
+                <script>
+                    function openSlideMenu(){
+                      document.getElementById('side-menu').style.width = '350px';
+                      document.getElementById('main').style.marginLeft = '350px';
+                    }
+                
+                    function closeSlideMenu(){
+                      document.getElementById('side-menu').style.width = '0';
+                      document.getElementById('main').style.marginLeft = '0';
+                    }
+                  </script>
+
+
+
+
+
+   <script src="scripts/contact.js"></script>
+ 
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<meta name="SpaceX" content="Spacex, About page">
+	<meta name="keywords" content="About the site, about spacex">
+	<meta name="author" content="Sophie Taule">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/rvb2smc.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/logoicon.png">
+	<link href="style.css" rel="stylesheet">
+	<title>SpaceX - About Us </title>
+</head>
+<body>
+
+
+
+
+  <!--- MENU --->
+  <!--- Phone bars button --->
+
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30 ">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+  
+  <!-- Navigation-->
+    <nav class="navbar-menu">
+  
+               
+                        <a href="index.html"><img src="images/spacexlogo.png" alt="Logo" height="40px" width="auto"></a> 
+  
+                        <a href="history.html">HISTORY</a>
+                        <a href="launch.html">LAUNCH</a> 
+                        <a href="about.html">ABOUT US</a>
+                        <a href="contact.html">CONTACT US</a>
+                       
+               
+     </nav>
+  
+  <!-- Navigation - logo only -->
+     <nav class="navbar-logo">
+      <a href="index.html"><img src="images/spacexlogo.png" alt="Logo" height="40px" width="auto"></a> 
+     </nav>
+  
+  
+  <!-- Phone/ sidemenu-->
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="index.html"><img src="images/spacexlogo.png" alt="Logo" height="40px" width="suto"></a> 
+    <br>
+    <a href="history.html">History</a>
+    <a href="launch.html">Launch</a>
+    <a href="about.html">About us</a>
+    <a href="contact.html">Contact us</a>
+  </div>
+  </nav>
+
+
+
+
+
+
+
+	
+			
+						   
+						   			   	
+					   <!-- Top Container -->
+		<section class="top-container-contact">
+						 <div class="showcase-about">
+								<h1>ABOUT US</h1>
+							
+								  
+             </div>
+    </section>
+             
+					   
+
+
+
+
+	
+           <!-- Boxes Section -->
+      <section class="boxes">
+          <div class="box">
+				      <h3>About our site</h3>
+              <p>SpaceX is founded to revolutionize space technology! </p>
+              <p>SpaceX successfully achieved the historic first reflight of an orbital class rocket in 2017, </p> SpaceX began launching Falcon Heavy, the world’s most powerful operational rocket by a factor of two. </p>
+              <p> This is just the beginning!</p>
+              <p> keep updated on our sites, remember to look to the stars!</p>
+  
+
+            </div>
+      </section>
+	
+			
+		
+
+
+        <!-- more info-->
+
+        <div class="about-container">
+                <div class="aboutinfo">  
+                </div>
+        </div>
+
+
+       
+        
+      <!-- open  close menu -->  
+    <section>
+            <div class="moreInfoTriggerclass" id="moreInfoTrigger1"> 
+                  <h4><span> ► More information...</span></i></h4>
+ 
+
+                        <div id="moreInfoContent1" style="display: none" class="moreinfo">
+                               <p>More on<a href="https://www.spacex.com/"><strong>SpaceX.com</strong></a></p>
+                               <p>Veiw images on<a href="https://www.flickr.com/photos/spacex/" ><strong>flicker</strong></a></p>
+                               <p>Follow Spacex on<a href="https://twitter.com/SpaceX" ><strong>Twitter</strong></a></p>
+                               <p>Follow Elon Musk <a href="https://twitter.com/elonmusk"><strong>Twitter</strong></a></p>
+                               
+                        </div>         
+             </div>   
+    </section>
+
+
+
+
+
+
+                
+              
+         
+
+
+
+                <script>
+                    function openSlideMenu(){
+                      document.getElementById('side-menu').style.width = '350px';
+                      document.getElementById('main').style.marginLeft = '350px';
+                    }
+                
+                    function closeSlideMenu(){
+                      document.getElementById('side-menu').style.width = '0';
+                      document.getElementById('main').style.marginLeft = '0';
+                    }
+                  </script>
+
+
+
+    <script src="scripts/about.js"></script>
+ 
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<meta name="SpaceX" content="Spacex, schedule Launches">
+	<meta name="keywords" content="schedule of launches">
+	<meta name="author" content="Sophie Taule">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/rvb2smc.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/logoicon.png">
+	<link href="style.css" rel="stylesheet">
+	<title>SpaceX - Launch Schedule</title>
+</head>
+
+<body>
+
+
+
+  <!--- MENU --->
+  <!--- Phone bars button --->
+
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30 ">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+  
+  <!-- Navigation-->
+    <nav class="navbar-menu">
+  
+               
+                        <a href="index.html"><img src="images/spacexlogo.png" alt="Logo" height="40px" width="auto"></a> 
+                        <a href="history.html">HISTORY</a>
+                        <a href="launch.html">LAUNCH</a> 
+                        <a href="about.html">ABOUT US</a>
+                        <a href="contact.html">CONTACT US</a>
+                       
+                       
+               
+     </nav>
+  
+  <!-- Navigation - logo only -->
+     <nav class="navbar-logo">
+      <a href="index.html"><img src="images/spacexlogo.png" alt="Logo" height="40" width="auto"></a> 
+     </nav>
+  
+  
+  <!-- Phone/ sidemenu-->
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="index.html"><img src="images/spacexlogo.png" alt="Logo" height="40" width="suto"></a> 
+    <br>
+              <a href="history.html">History</a>
+              <a href="launch.html">Launch</a>
+              <a href="about.html">About us</a>
+              <a href="contact.html">Contact us</a>
+  </div>
+  </nav>
+
+
+
+
+ 
+
+
+<!-- SEARCH-->
+  <section class="dark-box">
+<div class="search-box">
+  <input type="text" class="search-txt" id="search" name="search" placeholder="Search by mission name..."> 
+  <a class="search-btn" button id="searchButton" href="#"></a><img src="images/search.png" alt="icon" height=25 width="auto">
+</div>  
+
+
+</section>
+
+<!-- Launch Menu -->
+<div class="launch-menu">
+  <li><a class="launch-menu-a" href="schedule.html">Launch Schedule</a></li>
+  <li><a class="launch-menu-b" href="launch.html">Launch Manifest</a></li>
+</div>
+
+
+
+
+
+<div class="path">
+  <a href="index.html">Home</a> <a href="schedule.html">&#x27A4; Launch Schedule </a>
+</div>
+
+
+
+<div class="clear-box"><H1>LAUNCH SCHEDULE</H1></div>
+
+
+  
+
+<!-- schedule CONTAINERS-->
+<!--see schedule.js for more-->
+
+<section class="schedule-container ">
+    <div class="schedule">    
+  
+    </div>
+</section>
+
+
+
+
+<!-- To top button-->
+<button onclick="topFunction()" id="toTop" title="Go to top">Go to top ▲</button>
+
+
+
+<script>
+        function openSlideMenu(){
+          document.getElementById('side-menu').style.width = '350px';
+          document.getElementById('main').style.marginLeft = '350px';
+        }
+    
+        function closeSlideMenu(){
+          document.getElementById('side-menu').style.width = '0';
+          document.getElementById('main').style.marginLeft = '0';
+        }
+ </script>
+    
+    
+    
+        
+            <script src="scripts/schedule.js"></script>
+    </body>
+</html>
